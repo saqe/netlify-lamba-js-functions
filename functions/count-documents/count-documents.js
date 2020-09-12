@@ -13,7 +13,7 @@ exports.handler = async (event, context) => {
                         console.log(result);
                         await superagent.get(process.env.MESSAGE_API + result)
                             .then(res => {
-                                console.log;
+                                console.log(res);
                             })
                             .catch(err => {
                                 // err.message, err.response
