@@ -4,11 +4,13 @@
   "description": "",
   "main": "hello-world.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "postinstall": "netlify-lambda install"
   },
-  "author": "",
+  "author": "Saqib - DCode",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "^3.6.2"
+    "mongodb": "^3.6.2",
+    "netlify-lambda": "^1.6.2" 
   }
 }
