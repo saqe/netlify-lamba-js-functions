@@ -2,8 +2,8 @@ const mongo = require('mongodb');
 const superagent = require('superagent');
 
 exports.handler = async (event, context) => {
-    console.log("in Handler");
-    console.log("trying to connect");
+    console.log("In-Handler");
+    console.log("Trying to connect");
     mongo.MongoClient
         .connect(process.env.MONGODB_URI,
             function (err, database) {
