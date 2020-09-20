@@ -12,6 +12,7 @@ exports.handler = async (event, context, callback) => {
         const records = client
             .db('Ads')
             .collection('records');
+            
         const product_id=event.queryStringParameters.product
         if (product_id){
             const result = await records.findOne({id : parseInt(product_id)});
