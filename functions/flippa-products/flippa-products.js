@@ -7,7 +7,6 @@ exports.handler = async (event, context, callback) => {
                 MongoClient.connect(process.env.MONGODB_FLIPPA_URI, 
                     { useUnifiedTopology: true })
                 .catch(err => { console.log(err);});
-
     try{
         console.info("Database connected");
         const records = client
